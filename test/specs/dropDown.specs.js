@@ -8,10 +8,12 @@ describe('My Drop Down application', () => {
         await browser.pause(2000);
         //Have to open the options in order to select
         await (DropDownPage).dDownOptions.click();
+        // OPTIONAL: Check to see its not already selected
+        console.log("TRUE OR FALSE for Drop down option 1 should be FALSE?", await (DropDownPage).dropDown1.isSelected());
         //Once options are open click on option 1
         await (DropDownPage).dropDown1.click();
         await browser.pause(2000);
-        //What can we check here,  if its true? 
+        //OPTIONAL: What can we check here,  if its true = selected? 
         console.log("TRUE OR FALSE for Drop down option 1?", await (DropDownPage).dropDown1.isSelected());
         //Check to see if the option selected is correct by checking text for option 1
         await expect(DropDownPage.dropDown1).toHaveTextContaining(
