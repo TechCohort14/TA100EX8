@@ -2,7 +2,7 @@ import DropDownPage from '../pageobjects/dropDown.page.js'
 
 describe('My Drop Down application', () => {
     it('Should check for drop down 1', async () => {
-        //Start by navigatig to page        
+        //Start by navigating to page        
         await DropDownPage.open();
         //OPTIONAL: pause the screen so you can see what is happening
         await browser.pause(2000);
@@ -21,7 +21,7 @@ describe('My Drop Down application', () => {
         await browser.pause(2000);
     })
     it('Should check for drop down 2', async () => {
-        //Start by navigatig to page        
+        //Start by navigating to page        
         await DropDownPage.open();
         //OPTIONAL: pause the screen so you can see what is happening
         await browser.pause(2000);
