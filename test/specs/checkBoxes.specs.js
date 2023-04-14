@@ -6,12 +6,12 @@ describe('My Check Boxes application', () => {
         await CheckBoxPage.open();
         //OPTIONAL: pause the screen so you can see what is happening
         await browser.pause(2000);
+        
         //Get check box 1 and click on it
         await (CheckBoxPage).checkBox1.click();
-        //get the current true is selected; false is not selected
-        let chkBox1Sel = await $("#checkboxes > input[type=checkbox]:nth-child(1)"); 
+
         //What is the value True or False?
-        console.log("TRUE OR FALSE?", await chkBox1Sel.isSelected());
+        console.log("TRUE OR FALSE? LINE 14 OF CODE", await (CheckBoxPage).checkBox1.isSelected());
         //OPTIONAL: pause the screen so you can see what is happening
         await browser.pause(2000);
 

@@ -16,14 +16,16 @@ class AddElementPage extends Page {
     // Delete can only be done after adding an element
        //#elements > button:nth-child(5)
     
-    get deleteElem5 () {
-        return $(`#elements > button:nth-child(5)`);
+    get deleteElem () {
+        return $(`div[id="elements"] button`);
         } 
-    get deleteElem4 () {
-        return $(`#elements > button:nth-child(4)`);
-        }
+    // You could delete a particluar button    
+    // get deleteElem4 () {
+    //     return $(`#elements > button:nth-child(4)`);
+    //     }
     //Get the Array of Buttons    
     get delElemButtonCount () {
+            //$$ returns an array
             return $$(`div[id="elements"] button`);
             }      
                 
